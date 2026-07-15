@@ -1,4 +1,4 @@
-# Mi pimer modelo
+# Mi primer modelo
 
 Se requiere que modele el concepto de una persona.
 
