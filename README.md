@@ -28,5 +28,5 @@ Captura de pantalla de la sección "Testing" de VSC donde se aprecia la cobertur
 ![Separador Animado](https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=header)
 
 ### Testing:
-#### Coverage:#### 90.70%
+##Coverage:## 90.70%
 <img width="1244" height="712" alt="image" src="https://github.com/user-attachments/assets/e6224fdc-3fe8-4903-b70f-031dda83deaa" />
