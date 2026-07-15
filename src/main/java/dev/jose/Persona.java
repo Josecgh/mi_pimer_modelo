@@ -1,19 +1,19 @@
 package dev.jose;
 
+import java.time.Year;
+
 public class Persona {
 
   private String nombre;
   private String apellidos;
-  private int dni;
+  private String dni;
   private int nacimiento;
-  private int edad;
   
-  public Persona(String nombre, String apellidos, int dni, int nacimiento, int edad){
+  public Persona(String nombre, String apellidos, String dni, int nacimiento){
     this.nombre = nombre;
     this.apellidos = apellidos;
     this.dni = dni;
     this.nacimiento = nacimiento;
-    this.edad = edad;
   }
 
   public String getNombre(){
@@ -32,11 +32,11 @@ public class Persona {
     this.apellidos = apellidos;
   }
 
-  public int getDni(){
+  public String getDni(){
     return dni;
   }
 
-  public void setDni(int dni){
+  public void setDni(String dni){
     this.dni = dni;
   }
 
@@ -48,11 +48,23 @@ public class Persona {
     this.nacimiento = nacimiento;
   }
 
-  public int getEdad(){
-    return edad;
+  public int calcularEdad(){
+    int anioActual = Year.now().getValue();
+    return anioActual - this.nacimiento;
   }
 
-  public void setEdad(int edad){
-    this.edad = edad;
+  public int getEdad(){
+    return calcularEdad();
   }
+
+  @Override
+  public String toString() {
+    return "Persona{" +
+           "nombre='" + nombre + '\'' +
+           ", apellidos='" + apellidos + '\'' +
+           ", dni=" + dni +
+           ", nacimiento=" + nacimiento +
+           ", edad=" + getEdad() + // Mostramos la edad calculada al vuelo
+           '}';
+  } 
 }
