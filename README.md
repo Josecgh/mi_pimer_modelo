@@ -30,3 +30,6 @@ Captura de pantalla de la sección "Testing" de VSC donde se aprecia la cobertur
 ### Testing:
 **Coverage:** 90.70%
 <img width="1244" height="712" alt="image" src="https://github.com/user-attachments/assets/e6224fdc-3fe8-4903-b70f-031dda83deaa" />
+
+### App:
+<img width="998" height="128" alt="image" src="https://github.com/user-attachments/assets/4b92ce58-e5a9-4da2-84d8-e25b65ac516e" />
